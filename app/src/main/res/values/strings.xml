@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Student Attendance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_registered_students">Add Registered Students</string>
+    <string name="id_student_university"> Student Id </string>
+    <string name="full_name">Student Full Name</string>
+</resources>

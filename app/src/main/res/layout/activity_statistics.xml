@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:weightSum="20"
+    tools:context=".view.StatisticsActivity">
+
+    <Spinner
+        android:id="@+id/full_name_id_stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+       />
+
+    <Spinner
+        android:id="@+id/title_id_stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:spinnerMode="dialog"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/btn_stat_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_margin="2dp"
+        android:background="@drawable/btn_background"
+        android:text="Percentage of attendance"
+        android:onClick="attendanceCalculate"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/result_stat_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="%"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</LinearLayout>

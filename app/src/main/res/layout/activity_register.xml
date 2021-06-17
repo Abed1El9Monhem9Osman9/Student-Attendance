@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="9"
+    tools:context=".view.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Add Students"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/id_student_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ems="15"
+        android:gravity="center"
+        android:hint="@string/id_student_university"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:textColorLink="@color/red"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/full_name_student_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ems="15"
+        android:gravity="center"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColorHint="@color/red"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/add_student_reg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:onClick="addStd"
+        android:padding="1dp"
+
+        android:text="Add"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
